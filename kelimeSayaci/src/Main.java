@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
 
         String dosyaAdi = "C:\\Development\\KelimeSayaci\\text.txt";
-
         // Dosyayı açın ve okuyucuyu oluşturun
         File dosya = new File(dosyaAdi);
         Scanner okuyucu;
@@ -16,7 +15,6 @@ public class Main {
             System.out.println("Dosya bulunamadı: " + dosyaAdi);
             return;
         }
-
         // Kelime sayacını başlatın
         int kelimeSayisi = 0;
 
@@ -26,7 +24,6 @@ public class Main {
             okuyucu.next();
             kelimeSayisi++;
         }
-
         // Okuyucuyu kapatın
         okuyucu.close();
 
